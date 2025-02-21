@@ -1,0 +1,58 @@
+.background-box{
+    width: 400px;
+    height: 200px;
+    background-image: url("https://i.pinimg.com/736x/05/5e/84/055e84ce980832928d423484db686903.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px dot-dash lightcoral;
+    text-align: center;
+    line-height: 200px;
+}
+
+.ld-box{
+    width: 300px;
+    height: 150px;
+    background: linear-gradient(to left, deeppink, darkblue);
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.rd-box{
+    width: 300px;
+    height: 150px;
+    background: radial-gradient(circle, darkblue, deeppink);
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+}
+
+.sol-bor {
+    width: 200px;
+    height: 100px;
+    border: 3px solid black;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 20px;
+}
+
+.dash-bor {
+    width: 200px;
+    height: 100px;
+    border: 3px dashed red;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 20px;
+}
+
+.round-bor {
+    width: 200px;
+    height: 100px;
+    border: 3px solid blue;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 100px;
+}

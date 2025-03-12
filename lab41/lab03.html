@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Key Press Demo</title>
+</head>
+<body>
+    <input type="text" onkeydown="displayKey(event)" placeholder="Type something...">
+    <p id="result">Press any key...</p>
+    <script>
+        function displayKey(event) {
+            document.getElementById("result").innerText = "Last Pressed Key: " + event.key;
+        }
+    </script>
+</body>
+</html>

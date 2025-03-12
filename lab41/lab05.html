@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prevent Default Example</title>
+    <style>
+        #error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <label for="textInput">Enter text:</label>
+        <input type="text" id="textInput" placeholder="Enter text" required>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="error"></p>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const input = document.getElementById("textInput");
+            const errorMsg = document.getElementById("error");
+            if (!input.value.trim()) {
+                errorMsg.innerText = "Please enter some text!";
+            } else {
+                errorMsg.innerText = "Form submission prevented!";
+            }
+        });
+    </script>
+</body>
+</html>

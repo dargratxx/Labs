@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update HTML Content</title>
+</head>
+<body>
+    <div id="displayArea">Click the button to change this text.</div>
+    <button onclick="modifyContent()">Change Content</button>
+    <script>
+        function modifyContent() {
+            let contentBox = document.getElementById("displayArea");
+            contentBox.innerHTML = "<h2>New Content Added!</h2>";
+        }
+    </script>
+</body>
+</html>

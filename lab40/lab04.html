@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Switch Demo</title>
+</head>
+<body>
+    <img id="picture" src="default.jpg" width="200">
+    <button onclick="switchImage()">Change Image</button>
+    <script>
+        function switchImage() {
+            let imageElement = document.getElementById("picture");
+            imageElement.setAttribute("src", "new-image.jpg");
+        }
+    </script>
+</body>
+</html>
